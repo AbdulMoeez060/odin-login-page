@@ -27,15 +27,15 @@
 
                 <h2>Let's do this!</h2>
 
-                <form id="myform" action="#" method="post">
+                <form id="myform" method="post" onsubmit="event.preventDefault(); onSub();" >
                     <div class="row">
                         <div class="col">
                             <label for="first-name">First Name</label>
-                            <input type="text" name="first-name" id="first-name" autocomplete="on" required>
+                            <input type="text" name="first-name" id="first-name" autocomplete="on" pattern="\w{1,20}" required>
                         </div>
                         <div class="col">    
                             <label for="last-name">Last Name</label>
-                            <input type="text" name="last-name" id="last-name" autocomplete="on" required>
+                            <input type="text" name="last-name" id="last-name" autocomplete="on" pattern="\w{1,20}" required>
                         </div>
                     </div>
                     <div class="row">
@@ -45,23 +45,24 @@
                         </div>
                         <div class="col">    
                             <label for="phone-number">Phone Number</label>
-                            <input type="tel" name="phone-number" id="phone-number" autocomplete="on">
+                            <input type="tel" name="phone-number" id="phone-number" pattern="03[0-9]{2}-?[0-9]{7}" autocomplete="on">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
                             <label for="password">Password</label>
-                            <input type="password" name="password" id="password" required>
+                            <input type="password" name="password" id="password" minlength="4" required>
                         </div>
                         <div class="col">    
                             <label for="confirm-password">Confirm Password</label>
                             <input type="password" name="confirm-password" id="confirm-password" required>
+                            <p id="warning" class="hide"><strong>&#9888;</strong> Passwords don't match!</p>
                         </div>
                     </div>
                 </form>
             </div>
 
-            <input type="submit" value="Submit" form="myform">
+            <input id="submit" type="submit" value="Submit" form="myform">
             <p>Already Have a Account? <a href="#">Log in</a></p>
 
     

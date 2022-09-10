@@ -124,6 +124,10 @@ input[type='submit']:hover{
     background-color: #52878F;
 
 }
+input[type='submit']:disabled{
+    background-color: black;
+
+}
 
 .main> p{
     margin-left: 4%;
@@ -133,4 +137,11 @@ input[type='submit']:hover{
 }
 .main> p > a:hover{
     color: #7fa9b5;
+}
+.hide{
+    display: none;
+}
+.error{
+    color: red;
+    font-size: 14px;
 }
