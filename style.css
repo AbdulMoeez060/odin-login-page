@@ -76,12 +76,16 @@
 }
 
 input{
-    width: 250px
+    width: 250px;
+    border: 2px #E5E7EB solid;
+    border-radius: 3px;
+    outline: none;
+    padding-left: 10px;
 }
 form{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 25px;
 }
 label{
     font-size: 11px;
@@ -101,4 +105,9 @@ form > .row {
 form > .row > .col{
     display: flex;
     flex-direction: column;
+    gap: 5px;
+}
+input:focus{
+    box-shadow: 0 0 6px rgba(81, 203, 238, 1);
+    border: 2px solid rgba(81, 203, 238, 1);
 }
