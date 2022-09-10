@@ -66,4 +66,10 @@
     font-size: 20px;
     font-weight: 600;
 }
-
+.main > .sign-up-form{
+    background-color: #fff;
+    height: 35%;
+    -webkit-box-shadow: 0 4px 3px rgba(0, 0, 0, 0.251);
+	   -moz-box-shadow: 0 4px 3px rgba(0, 0, 0, 0.251);
+	        box-shadow: 0 4px 3px rgba(0, 0, 0, 0.251);
+}
