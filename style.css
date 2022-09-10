@@ -62,7 +62,7 @@
     align-items: flex-end;
 }
 .main > .texts > p{
-    padding: 0 25% 5% 3%;
+    padding: 0 25% 5% 4%;
     font-size: 20px;
     font-weight: 600;
 }
@@ -72,4 +72,33 @@
     -webkit-box-shadow: 0 4px 3px rgba(0, 0, 0, 0.251);
 	   -moz-box-shadow: 0 4px 3px rgba(0, 0, 0, 0.251);
 	        box-shadow: 0 4px 3px rgba(0, 0, 0, 0.251);
+    padding-left: 4%;
+}
+
+input{
+    width: 250px
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+label{
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #3E4653;
+}
+.sign-up-form > h2{
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+form > .row {
+    display: flex;
+    gap: 10%;
+}
+
+form > .row > .col{
+    display: flex;
+    flex-direction: column;
 }
