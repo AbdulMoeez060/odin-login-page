@@ -24,9 +24,6 @@ function checkPassword(e){
 var password = document.querySelector('#password');
 var confirm_pass = document.querySelector('#confirm-password');
 
-// const button = document.getElementById('submit')
-// button.disabled = (password.value === confirm_pass.value)
-
 function validate() {
     if(password.value !== confirm_pass.value) {
         confirm_pass.setCustomValidity("Passwords Don't Match");
